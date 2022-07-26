@@ -8,7 +8,7 @@ app.use(express.json());
 
 const returnScraperApiUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 
-// Welcome route
+
 app.get('/', async (req, res) => {
     res.send('Welcome to Amazon Scraper API!');
 });
